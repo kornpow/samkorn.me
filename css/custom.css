@@ -9,6 +9,7 @@ h2{
     padding: 1em;
     border-width: 0.5em;
     border-radius: 1em;
+    width:20em;
 }
  .navbar .navbar-inner .navbar-fixed-top .transparent {
     border-width: 0px;
