@@ -29,9 +29,15 @@ h2{
 	color:white;
 
 }
+a :hover {
+    color:#696969;
+}
+a #black {
+    color:#000000;
+}
 
 a {
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
 }
 

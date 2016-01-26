@@ -26,14 +26,20 @@
   <!-- ////////////////////// -->
   <!-- //  BOOTSTRAP STUFF // -->
   <!-- ////////////////////// -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
- 
-
   <link rel="stylesheet" href="css/custom.css" >
-  <link href="theme.css" rel="stylesheet">
-  <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+  <link rel="stylesheet" href="css/unslider.css">
+
+
+
+
+
+
   <style>
     svg { display:inherit; margin: 0px; padding: 0px; height: 90%;width: 90% }
   </style>
@@ -48,70 +54,118 @@
 <!-- //////////// -->
 <body role="document">
 
-      <!-- /////////////////// -->
-      <!-- //  TOP NAV BAR  // -->
-      <!-- /////////////////// -->
-      <nav class="navbar navbar-inner navbar-fixed-top transparent">
-        <div 
-        class="container" 
-        style="background-color:#696969; 
-        height: 4em;
-        width:100%;
-        opacity: .8;
-        ">
-          <div class="navbar-header">
+  <!-- /////////////////// -->
+  <!-- //  TOP NAV BAR  // -->
+  <!-- /////////////////// -->
+  <nav class="navbar navbar-inner navbar-fixed-top transparent">
+    <div 
+    class="container" 
+    style="background-color:#696969; 
+    height: 4em;
+    width:100%;
+    opacity: .8;
+    ">
+    <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-          </div>
-          <span></span>
-          <div id="navbar" class="navbar-collapse collapse" style="font-size:2em;">
-            <ul class="nav navbar-nav">
-              <div class="col-xs-12" style="width:3em;"></div>
-              <li class="home"><a href="#">Home</a></li>
-              <div class="col-xs-12" style="width:2em;"></div>
-              <li><a href="#projects">Projects</a></li>
-              <div class="col-xs-12" style="width:2em;"></div>
-              <li><a href="#resume">Resume</a></li>
-              <div class="col-xs-12" style="width:2em;"></div>
-              <li><a href="#links">Links</a></li>
-              <div class="col-xs-12" style="height:9em;"></div>
+    </div>
+    <span></span>
+    <div id="navbar" class="navbar-collapse collapse" style="font-size:2em;">
+      <ul class="nav navbar-nav">
+        <div class="col-xs-12" style="width:3em;"></div>
+        <li class="home"><a href="#">Home</a></li>
+        <div class="col-xs-12" style="width:2em;"></div>
+        <li><a href="#projects">Projects</a></li>
+        <div class="col-xs-12" style="width:2em;"></div>
+        <li><a href="#resume">Resume</a></li>
+        <div class="col-xs-12" style="width:2em;"></div>
+        <li><a href="#links">Links</a></li>
+        <div class="col-xs-12" style="height:9em;"></div>
 
-            </ul>
-          </div>  
-        </div>
-      </nav>
+      </ul>
+    </div>  
+  </div>
+</nav>
 
-      <!-- /////////////////// -->
-      <!-- //    BANNER     // -->
-      <!-- /////////////////// -->
-      <div class="col-xs-12" style="height:5em;"></div>
+<!-- /////////////////// -->
+<!-- //    BANNER     // -->
+<!-- /////////////////// -->
+<div class="col-xs-12" style="height:5em;"></div>
 
-      <div class="container theme-showcase" role="main">
-
-
-
-      <!-- /////////////////// -->
-      <!-- //  MAIN CONTENT // -->
-      <!-- /////////////////// -->
-      <div class="container">
-      
-      <br/><br/><br/><br/>
-      <h2> Resume</h2>
-
-<iframe src="https://docs.google.com/viewer?url=http://sako0938.github.io/samkorn.me/data/Resume4-13-15.pdf&embedded=true" style="width:80%; height:800px;" frameborder="0"></iframe>
-
-<!--       <object data="data/Resume4-13-15.pdf" type="application/pdf" width="100%" height="400%">
-  <p>Resume? <a href="myfile.pdf">to the PDF!</a></p>
-</object> -->
+<div class="container theme-showcase" role="main">
 
 
-        </div> <!--- closing of our main contents "container" -->
+
+  <!-- /////////////////// -->
+  <!-- //  MAIN CONTENT // -->
+  <!-- /////////////////// -->
+  <div class="container">
+    <br/><br/><br/><br/>
+
+    <h2 id="projects"> Projects </h2>
+    <h3>Photon Home </h3>
+    <p>These are the design revisions of the PhotonHome, a Particle Photon powered outlet controller. Why invest in all-new smart home electronics, when you can just make all of your existing things work smarter, for you!
+    Here is the Hack-A-Day Link. You'd think I could figure out HTML, but I just can't for the life of me make this link clickable.
+    <br/>
+    <br/>
+    https://hackaday.io/project/6229-photonhome-ac-power-iot-homebase
+    <br/>
+    <br/>
+    This first image is not even the PhotonHome device. This is my most recent PCB as of January 25th, and it is coming soon from OSHPark. It is basically the final demo sensor for this product. It has inputs for Thermocouple, DHT22 Temperature and Humidity sensor, 2 RS2412B "Neopixel" outputs, and will take in power using a 3A@5V AC/DC converter to power the LEDs and everything else. 
+    <br/>
+    <br/>
+    <img src="img/PCBArt_PhotonSense.png" alt="photon-sense" width=500em></img>
+    <br/>
+    <br/>
+    This is the latest PhotonHome PCB. This board is when I transistioned from it being an ATmega328p board to a WiFi controllable Photon board. I have really come to learn to appreciate the dev-board. I really sometimes get carried away in trying to choose components and dive right in, but a better solution is the faster solution, and the Photon had everything that I needed in one package. You should really just check out my HackADay! <a href="https://hackaday.io/project/6229-photonhome-ac-power-iot-homebase">Link-please-work!</a>
+    <br/>
+    <br/>
+    <img src="img/PCBArt_PhotonHome.png" alt="photon-sense" width=1000em></img>
+    <br/>
+    <br/>
+    This board is the last of the DriverDuino series, DriverDuino V3 which is what the project was before I switched to the Photon. New in this board is PCB mounted relays, bluetooth, real-time clock. Not all of those things however did work, or would have worked... I took this project up for my Digital Design Lab class, when I needed a quick pivot, because my other project was way to big.
+    <br/>
+    <br/>
+    <img src="img/PCBArt_DriverDuinoV3.png" alt="photon-sense" width=1000em></img>
+    <br/>
+    <br/>
+    DriverDuino V2. A relic just for reference. Never actually sent off for manufacture, but designed to fixed the idiotic flaws of DriverDuino V1. Featured an ISP programming header (the last one lacked that), in addition to a FTDI serial port.
+    <br/>
+    <br/>
+    <img src="img/PCBArt_DriverDuinoV2.png" alt="photon-sense" width=500em></img>
+    <br/>
+    <br/>
+    DriverDuino V1, the original. Designed with an instructable in mind for controlling an electrical outlet with relays. I forgot the programming header and only had the FTDI header, so could never get the Arduino bootloader on to actually program over serial. This was my first printed PCB for a personal project, and I have learned so much in the last year and a half. 
+    <br/>
+    <br/>
+    <img src="img/PCBArt_DriverDuinoV1.png" alt="photon-sense" width=500em></img>
+    
+
+
+    <h2 id="resume"> Resume</h2>
+    <iframe src="https://docs.google.com/viewer?url=http://sako0938.github.io/samkorn.me/data/Resume1-1-16.pdf&embedded=true" style="width:80%; height:800px;" frameborder="0"></iframe>
+
+    <h2 id="links"> Links</h2>
+    <p> Here are some links that I have been collecting over the years. They all seem random now out of context. </p>
+
+    <div id="black">
+      <a href="https://www.youtube.com/watch?v=gdRqZwrrXwU"> LTspice for Mac. </a> <br/>
+      <a href="http://brew.sh/">Homebrew: The missing package manager for Mac.</a> <br/>
+      <a href="http://detexify.kirelabs.org/symbols.html">Latex Symbol Table</a> <br/>
+      <a href="https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh">How to mount a remote file system over ssh!</a> <br/>
+      <a href="https://blogs.mentor.com/tom-hausherr/blog/tag/pcb-mounting-holes/">PCB Mounting Holes?</a> <br/>
+      <a href="http://blog.stevemarple.co.uk/2013/03/how-to-use-gpio-version-of-avrdude-on.html">Using a Raspberry Pi as an AVR Programmer</a> <br/>
+    </div>
+
+
+
+  </div> <!--- closing of our main contents "container" -->
 
 
 
@@ -119,11 +173,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  
-
 
   </body>
 
 
-</html>
+  </html>
