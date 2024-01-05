@@ -25,6 +25,11 @@
         "network": "LinkedIn",
         "username": "samuel-korn",
         "url": "https://www.linkedin.com/in/samuel-korn/"
+      },
+      {
+        "network": "GitHub",
+        "username": "kornpow",
+        "url": "https://github.com/kornpow"
       }
     ]
   },

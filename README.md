@@ -9,5 +9,5 @@ yq eval -P resume.json -oy > output.yaml
 ```
 Export the resume using a theme to HTML format.
 ```bash
-resume export --resume output.yaml --format html  --theme macchiato public/index.html
+resume export --resume resume.json --format html  --theme macchiato public/index.html
 ```
