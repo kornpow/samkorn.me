@@ -1,0 +1,290 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Sam Korn",
+    "label": "",
+    "image": "",
+    "email": "korn94sam@gmail.com",
+    "phone": "(720) 333-4371",
+    "url": "https://samkorn.me",
+    "summary": "Sam has worked in a variety of industries, and always works with passion for the mission. He is always learning about new technologies, both software and hardware, and loves to bring together his wide variety of experiences together to build novel new things. He is looking for a new role which is the right combination of great mission, great team, and great product.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Westminster",
+      "countryCode": "US",
+      "region": "Colorado"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "samkorn",
+        "url": "https://twitter.com/samkorn"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "samuel-korn",
+        "url": "https://www.linkedin.com/in/samuel-korn/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Voltage Cloud",
+      "location": "Remote",
+      "description": "Voltage Cloud",
+      "position": "Backend + Infrastructure Engineer",
+      "url": "https://voltage.cloud",
+      "startDate": "2021-09-01",
+      "endDate": "2023-10-29",
+      "summary": "Building easy to deploy infrastructure which allows developers to easily begin using Bitcoin/Lightning in their business.",
+      "highlights": [
+        "Created a custom payment, credit, and invoicing system, which allowed customers to pay for our services using Bitcoin or USD, and manage their subscriptions.",
+        "Primary developer of SaaS REST API Backend, written in Python, running in AWS Lambda, deployed using CloudFormation.",
+        "Created a site-to-site VPN between our AWS and GCP datacenters.",
+        "Developed tools and infra to allow kubernetes workloads to be deployed on both AWS EKS and Google GKE clusters.",
+        "Contributed to improving our CI/CD workflows. Created GitHub Actions to run tests, and update cloud configuration parameters. Helped to maintain our ArgoCD deployment infrastructure.",
+        "Designed and managed our employee Wireguard VPN network.",
+        "Managed the majority of our cloud infrastructure using Terraform, and was constantly looking for opportunities to bring more infrastructure under IaC practices."
+      ]
+    },
+    {
+      "name": "Biarri Networks",
+      "location": "Denver, CO",
+      "description": "Biarri Networks",
+      "position": "DevOps Engineer",
+      "url": "https://biarrinetworks.com",
+      "startDate": "2020-08-01",
+      "endDate": "2021-09-01",
+      "summary": "Creating deployment pipelines, and other tools, to enable developers working on advanced computation to optimally design fiber optic networks.",
+      "highlights": [
+        "Maintained and upgraded our Jenkins CI/CD server.",
+        "Led an effort to migrate our jobs from classic Jenkins to using Jenkinsfiles, which is more composable, and easier to audit as code.",
+        "Improved internal tools to improve data-flow to leadership and managers.",
+        "Implemented a system upgrade for our high-performance solver servers, minimizing customer downtime, while adhering to strict upgrade requirements."
+      ]
+    },
+    {
+      "name": "Babylon Micro-Farms",
+      "location": "Charlottesville, VA",
+      "description": "Babylon Micro-Farms",
+      "position": "IoT Engineer",
+      "url": "https://babylonmicrofarms.com",
+      "startDate": "2017-08-01",
+      "endDate": "2020-07-01",
+      "summary": "Developed electronics, embedded software, and cloud software to enable fleets of hydroponic farms to grow quality produce.",
+      "highlights": [
+        "Wrote embedded Linux Python code for our farm modules, and managed OTA updates to the devices.",
+        "Developed a Django based backend API which ingested farm sensor data, and allowed for control of the device using a React Native mobile app.",
+        "Developed a label printing system, which allowed for tracking physical plant seed pods to info in a database.",
+        "Awarded a patent for an automated hydroponics nutrient dosing system: https://patents.justia.com/patent/20200396917"
+      ]
+    },
+    {
+      "name": "Canvas Technology",
+      "location": "Boulder, CO",
+      "description": "Canvas Technology",
+      "position": "Electrical Engineer",
+      "url": "https://amazon.com",
+      "startDate": "2016-06-01",
+      "endDate": "2017-07-01",
+      "summary": "Designed and manufacturered electronics, and created testing systems for an advanced computer vision warehouse robot.",
+      "highlights": [
+        "Installed hardware and software onto high performance PCs, which was the brain of an autonomous warehouse vehicle.",
+        "Collaborated with team members in our software, electrical, and mechanical teams to develop a new embedded architecture, which allowed for simpler communication and wiring.",
+        "Created a test rig in C#, which tested the operation of an embedded-system wheel assembly.",
+        "Designed, debugged, and iterated on a variety of PCBs, including a motor driver, a head unit, and a LED unit, and created optimized BOMs.",
+        "Manufactured some electronics in-lab using a pick-and-place machine and reflow oven."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Colorado Boulder",
+      "url": "https://www.colorado.edu/",
+      "area": "Electrical and Computer Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2012-08-01",
+      "endDate": "2016-05-01"
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": [
+        "Python",
+        "Golang",
+        "Javascript",
+        "C#"
+      ]
+    },
+    {
+      "name": "Tools",
+      "level": "",
+      "keywords": [
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "Cloudformation",
+        "Docker"
+      ]
+    }
+    ,
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": [
+        "DynamoDB",
+        "PostgreSQL",
+        "Redis",
+        "MongoDB"
+      ]
+    },
+    {
+      "name": "Electrical",
+      "level": "",
+      "keywords": [
+        "KiCAD",
+        "Altium",
+        "Eagle"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Beginner"
+    },
+    {
+      "language": "Korean",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Health",
+      "keywords": [
+        "Running",
+        "Lifting",
+        "Biking"
+      ]
+    },
+    {
+      "name": "Hobby",
+      "keywords": [
+        "Mushrooms",
+        "Gardening",
+        "Brewing"
+      ]
+    }
+  ],
+  "references": [],
+  "projects": [
+    {
+      "name": "On-Prem Application Cluster",
+      "description": "A kubernetes cluster, which does most of the compute using on-premises hardware",
+      "highlights": [
+        "Create a three node 'k3s' (minified kubernetes) cluster with one node in the cloud and two nodes 'on-prem' at my home.",
+        "On-prem nodes include a high performance machine with a GPU, and a low performance single board computer.",
+        "Terraform used to create the minimal cloud infrastructure and security groups.",
+        "A variety of current workloads: A label printer UI, this resume, LNBits bitcoin payment gateway.",
+        "IN-PROGRESS: Whisper AI application to remove ads from podcasts."
+      ],
+      "keywords": [
+        "Infrastructure",
+        "Kubernetes",
+        "AI"
+      ],
+      "startDate": "2023-10-29",
+      "endDate": "",
+      "url": "https://samkorn.xyz/labelprinter",
+      "roles": [
+        "",
+        ""
+      ],
+      "entity": "",
+      "type": "application"
+    },
+    {
+      "name": "IoT Prometheus Temperature and Humidity Sensor",
+      "description": "A MicroPython + hardware project, which communicates to a temperature and humidity sensor.",
+      "highlights": [
+        "Hardware is a Raspberry Pi Pico W wired to a AM2301 sensor.",
+        "Runs a webserver on the embedded device, and returns data in prometheus data format.",
+        "Grafana agent on another device queries the sensor server and sends data to Grafana Cloud where data can be graphed and analyzed."
+      ],
+      "keywords": [
+        "Hardware",
+        "Monitoring",
+        "Prometheus"
+      ],
+      "startDate": "2023-10-29",
+      "endDate": "",
+      "url": "",
+      "roles": [
+        "",
+        ""
+      ],
+      "entity": "",
+      "type": "application"
+    },
+    {
+      "name": "Pixel.Promo",
+      "description": "A paid service which allows you to draw art on a public forum, and protects your art from defacement.",
+      "highlights": [
+        "Built using the awesome Python tool, Zappa, which allows for easily creating Flask applications hosted by AWS Lambda.",
+        "Keeps track of which pixels are being protected, and will efficiently replace defaced pixels."
+      ],
+      "keywords": [
+        "Bitcoin",
+        "Image Processing",
+        "Fun"
+      ],
+      "startDate": "2021-10-01",
+      "endDate": "",
+      "url": "https://pixel.promo",
+      "roles": [
+        "",
+        ""
+      ],
+      "entity": "",
+      "type": "application"
+    },
+    {
+      "name": "Lightning Spore",
+      "description": "A web shop which specializes in selling mushroom genetics, and elecronics related to mushroom cultivation.",
+      "highlights": [
+        "Currently have a genetics library of 15+ species of mushroom (gourmet, medicinal, etc).",
+        "Website is developed using WordPress, which has been an interesting learning experience creating an appealing and trustworthy business frontend.",
+        "Beginning to create YouTube videos, using AI tools to be able to work quickly and with quality."
+      ],
+      "keywords": [
+        "E-Commerce",
+        "Wordpress",
+        "Science"
+      ],
+      "startDate": "2023-10-29",
+      "endDate": "",
+      "url": "https://lightningspore.com",
+      "roles": [
+        "",
+        ""
+      ],
+      "entity": "",
+      "type": "application"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
