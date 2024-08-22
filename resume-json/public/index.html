@@ -494,7 +494,7 @@ ul.two-column li {
                                     <h6 class="main-skill skill">Kubernetes</h6>
                                     <h6 class="main-skill skill">Terraform</h6>
                                     <h6 class="main-skill skill">Jenkins</h6>
-                                    <h6 class="main-skill skill">Cloudformation</h6>
+                                    <h6 class="main-skill skill">CloudFormation</h6>
                                     <h6 class="main-skill skill">Docker</h6>
                             </div>
                     </section>
@@ -566,7 +566,7 @@ ul.two-column li {
                         <h3>Summary</h3>
                         <div class="keyline"></div>
                     </div>            <p class="summary">
-                        Sam has worked in a variety of industries, and always works with passion for the mission. He is always learning about new technologies, both software and hardware, and loves to bring together his wide variety of experiences together to build novel new things. He is looking for a new role which is the right combination of great mission, great team, and great product.
+                        Sam has worked in a variety of industries, and always works with passion for the mission. He is always learning about new technologies, both software and hardware, and loves to bring together his wide variety of experiences to build novel new things. He is looking for a new role which is the right combination of great mission, great team, and great product.
                     </p>
                 </div>
         <div class="container work-container">
@@ -594,7 +594,7 @@ ul.two-column li {
                         <li>Created a custom payment, credit, and invoicing system, which allowed customers to pay for our services using Bitcoin or USD, and manage their subscriptions.</li>
                         <li>Primary developer of SaaS REST API Backend, written in Python, running in AWS Lambda, deployed using CloudFormation.</li>
                         <li>Created a site-to-site VPN between our AWS and GCP datacenters.</li>
-                        <li>Developed tools and infra to allow kubernetes workloads to be deployed on both AWS EKS and Google GKE clusters.</li>
+                        <li>Developed tools and infrastructure to allow kubernetes workloads to be deployed on both AWS EKS and Google GKE clusters.</li>
                         <li>Contributed to improving our CI/CD workflows. Created GitHub Actions to run tests, and update cloud configuration parameters. Helped to maintain our ArgoCD deployment infrastructure.</li>
                         <li>Designed and managed our employee Wireguard VPN network.</li>
                         <li>Managed the majority of our cloud infrastructure using Terraform, and was constantly looking for opportunities to bring more infrastructure under IaC practices.</li>
@@ -660,7 +660,7 @@ ul.two-column li {
                     <h4>Electrical Engineer</h4>
         
         
-                    <p class="summary">Designed and manufacturered electronics, and created testing systems for an advanced computer vision warehouse robot.</p>
+                    <p class="summary">Designed and manufactured electronics, and created testing systems for an advanced computer vision warehouse robot.</p>
         
                     <ul>
                         <li>Installed hardware and software onto high performance PCs, which was the brain of an autonomous warehouse vehicle.</li>
@@ -712,7 +712,10 @@ ul.two-column li {
                 <section class="item">
                     <div class="section-header clearfix">
                         <h3 class="bold pull-left">
-                                IoT Prometheus Temperature and Humidity Sensor
+                                <a href="https://github.com/lightningspore/mushroom-monorepo/tree/master/software/esphome" target="_blank">
+                                    IoT Prometheus Temperature and Humidity Sensor
+                                        <span class="sublink">∙ <a href="https://github.com/lightningspore/mushroom-monorepo/tree/master/software/esphome" target="_blank" class="sublink">https://github.com/lightningspore/mushroom-monorepo/tree/master/software/esphome</a></span>
+                                </a>
                         </h3>
                         <h5 class="italic pull-right">
                                 <span class="startDate">10/2023</span>
@@ -735,6 +738,7 @@ ul.two-column li {
                         <li>Hardware is a Raspberry Pi Pico W wired to a AM2301 sensor.</li>
                         <li>Runs a webserver on the embedded device, and returns data in prometheus data format.</li>
                         <li>Grafana agent on another device queries the sensor server and sends data to Grafana Cloud where data can be graphed and analyzed.</li>
+                        <li>This project has been bundled and improved by LightningSpore. It now uses ESP32, ESPHome, and the SCD41 environmental sensor.</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -765,6 +769,8 @@ ul.two-column li {
                     <ul>
                         <li>Built using the awesome Python tool, Zappa, which allows for easily creating Flask applications hosted by AWS Lambda.</li>
                         <li>Keeps track of which pixels are being protected, and will efficiently replace defaced pixels.</li>
+                        <li>This project is being linked to on the https://satoshis.place website!</li>
+                        <li>Project has been re-vamped so that is deployable using K8s, and the lightning payment process is easier to understand.</li>
                     </ul>
                 </section>
                 <section class="item">
@@ -781,7 +787,7 @@ ul.two-column li {
                         </h5>
                     </div>
                       <h4>
-                        A web shop which specializes in selling mushroom genetics, and elecronics related to mushroom cultivation.
+                        A web shop which specializes in selling mushroom genetics, and electronics related to mushroom cultivation.
                       </h4>
         
         
@@ -793,9 +799,10 @@ ul.two-column li {
         
         
                     <ul>
-                        <li>Currently have a genetics library of 15+ species of mushroom (gourmet, medicinal, etc).</li>
-                        <li>Website is developed using WordPress, which has been an interesting learning experience creating an appealing and trustworthy business frontend.</li>
-                        <li>Beginning to create YouTube videos, using AI tools to be able to work quickly and with quality.</li>
+                        <li>Currently have a genetics library of 15+ species of mushrooms (gourmet, medicinal, etc) available for sale.</li>
+                        <li>Website is developed using WordPress, Zaprite and LNBits is leveraged in order to achieve a high quality experience for BTC and USD payments.</li>
+                        <li>Electronic sensor modules have been developed using Open-Source hardware and software components</li>
+                        <li>3D printed enclosures have been designed to package the electronics.</li>
                     </ul>
                 </section>
         </div>

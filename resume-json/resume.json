@@ -7,7 +7,7 @@
     "email": "korn94sam@gmail.com",
     "phone": "(720) 333-4371",
     "url": "https://samkorn.me",
-    "summary": "Sam has worked in a variety of industries, and always works with passion for the mission. He is always learning about new technologies, both software and hardware, and loves to bring together his wide variety of experiences together to build novel new things. He is looking for a new role which is the right combination of great mission, great team, and great product.",
+    "summary": "Sam has worked in a variety of industries, and always works with passion for the mission. He is always learning about new technologies, both software and hardware, and loves to bring together his wide variety of experiences to build novel new things. He is looking for a new role which is the right combination of great mission, great team, and great product.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -47,7 +47,7 @@
         "Created a custom payment, credit, and invoicing system, which allowed customers to pay for our services using Bitcoin or USD, and manage their subscriptions.",
         "Primary developer of SaaS REST API Backend, written in Python, running in AWS Lambda, deployed using CloudFormation.",
         "Created a site-to-site VPN between our AWS and GCP datacenters.",
-        "Developed tools and infra to allow kubernetes workloads to be deployed on both AWS EKS and Google GKE clusters.",
+        "Developed tools and infrastructure to allow kubernetes workloads to be deployed on both AWS EKS and Google GKE clusters.",
         "Contributed to improving our CI/CD workflows. Created GitHub Actions to run tests, and update cloud configuration parameters. Helped to maintain our ArgoCD deployment infrastructure.",
         "Designed and managed our employee Wireguard VPN network.",
         "Managed the majority of our cloud infrastructure using Terraform, and was constantly looking for opportunities to bring more infrastructure under IaC practices."
@@ -93,7 +93,7 @@
       "url": "https://amazon.com",
       "startDate": "2016-06-01",
       "endDate": "2017-07-01",
-      "summary": "Designed and manufacturered electronics, and created testing systems for an advanced computer vision warehouse robot.",
+      "summary": "Designed and manufactured electronics, and created testing systems for an advanced computer vision warehouse robot.",
       "highlights": [
         "Installed hardware and software onto high performance PCs, which was the brain of an autonomous warehouse vehicle.",
         "Collaborated with team members in our software, electrical, and mechanical teams to develop a new embedded architecture, which allowed for simpler communication and wiring.",
@@ -134,11 +134,10 @@
         "Kubernetes",
         "Terraform",
         "Jenkins",
-        "Cloudformation",
+        "CloudFormation",
         "Docker"
       ]
-    }
-    ,
+    },
     {
       "name": "Databases",
       "level": "",
@@ -224,7 +223,8 @@
       "highlights": [
         "Hardware is a Raspberry Pi Pico W wired to a AM2301 sensor.",
         "Runs a webserver on the embedded device, and returns data in prometheus data format.",
-        "Grafana agent on another device queries the sensor server and sends data to Grafana Cloud where data can be graphed and analyzed."
+        "Grafana agent on another device queries the sensor server and sends data to Grafana Cloud where data can be graphed and analyzed.",
+        "This project has been bundled and improved by LightningSpore. It now uses ESP32, ESPHome, and the SCD41 environmental sensor."
       ],
       "keywords": [
         "Hardware",
@@ -233,7 +233,7 @@
       ],
       "startDate": "2023-10-29",
       "endDate": "",
-      "url": "",
+      "url": "https://github.com/lightningspore/mushroom-monorepo/tree/master/software/esphome",
       "roles": [
         "",
         ""
@@ -246,7 +246,9 @@
       "description": "A paid service which allows you to draw art on a public forum, and protects your art from defacement.",
       "highlights": [
         "Built using the awesome Python tool, Zappa, which allows for easily creating Flask applications hosted by AWS Lambda.",
-        "Keeps track of which pixels are being protected, and will efficiently replace defaced pixels."
+        "Keeps track of which pixels are being protected, and will efficiently replace defaced pixels.",
+        "This project is being linked to on the https://satoshis.place website!",
+        "Project has been re-vamped so that is deployable using K8s, and the lightning payment process is easier to understand."
       ],
       "keywords": [
         "Bitcoin",
@@ -265,11 +267,12 @@
     },
     {
       "name": "Lightning Spore",
-      "description": "A web shop which specializes in selling mushroom genetics, and elecronics related to mushroom cultivation.",
+      "description": "A web shop which specializes in selling mushroom genetics, and electronics related to mushroom cultivation.",
       "highlights": [
-        "Currently have a genetics library of 15+ species of mushroom (gourmet, medicinal, etc).",
-        "Website is developed using WordPress, which has been an interesting learning experience creating an appealing and trustworthy business frontend.",
-        "Beginning to create YouTube videos, using AI tools to be able to work quickly and with quality."
+        "Currently have a genetics library of 15+ species of mushrooms (gourmet, medicinal, etc) available for sale.",
+        "Website is developed using WordPress, Zaprite and LNBits is leveraged in order to achieve a high quality experience for BTC and USD payments.",
+        "Electronic sensor modules have been developed using Open-Source hardware and software components",
+        "3D printed enclosures have been designed to package the electronics."
       ],
       "keywords": [
         "E-Commerce",

@@ -11,3 +11,13 @@ Export the resume using a theme to HTML format.
 ```bash
 resume export --resume resume.json --format html  --theme macchiato public/index.html
 ```
+This creates a self-contained HTML file which is located at `public/index.html`.
+
+## Deployment
+### Kubernetes
+In order to deploy this resume to the url `samkorn.me`, which is currently hosted using kubernetes, this `index.html` file must be added to a ConfigMap in the cluster.
+
+```
+kubectl create configmap nginx-html --from-file=public/index.html --dry-run=client -o yaml | kubectl apply -f -
+```
+
