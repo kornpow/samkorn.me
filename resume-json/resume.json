@@ -61,7 +61,7 @@
       "url": "https://biarrinetworks.com",
       "startDate": "2020-08-01",
       "endDate": "2021-09-01",
-      "summary": "Creating deployment pipelines, and other tools, to enable developers working on advanced computation to optimally design fiber optic networks.",
+      "summary": "Creating deployment pipelines, and other tools, that enable developers working on advanced computation to optimally design fiber optic networks.",
       "highlights": [
         "Maintained and upgraded our Jenkins CI/CD server.",
         "Led an effort to migrate our jobs from classic Jenkins to using Jenkinsfiles, which is more composable, and easier to audit as code.",
@@ -98,8 +98,8 @@
         "Installed hardware and software onto high performance PCs, which was the brain of an autonomous warehouse vehicle.",
         "Collaborated with team members in our software, electrical, and mechanical teams to develop a new embedded architecture, which allowed for simpler communication and wiring.",
         "Created a test rig in C#, which tested the operation of an embedded-system wheel assembly.",
-        "Designed, debugged, and iterated on a variety of PCBs, including a motor driver, a head unit, and a LED unit, and created optimized BOMs.",
-        "Manufactured some electronics in-lab using a pick-and-place machine and reflow oven."
+        "Designed, debugged, and iterated on a variety of PCBs, including a motor driver, a MCU communications hub, and a LED unit, and created cost-optimized BOMs.",
+        "Manufactured electronics in-lab using a pick-and-place machine and reflow oven."
       ]
     }
   ],
@@ -165,11 +165,11 @@
     },
     {
       "language": "Spanish",
-      "fluency": "Beginner"
+      "fluency": "Intermediate"
     },
     {
       "language": "Korean",
-      "fluency": "Beginner"
+      "fluency": "Intermediate"
     }
   ],
   "interests": [
@@ -196,10 +196,10 @@
       "name": "On-Prem Application Cluster",
       "description": "A kubernetes cluster, which does most of the compute using on-premises hardware",
       "highlights": [
-        "Create a three node 'k3s' (minified kubernetes) cluster with one node in the cloud and two nodes 'on-prem' at my home.",
+        "Created a three node 'k3s' (minified kubernetes) cluster with one node in the cloud and two nodes 'on-prem' at my home.",
         "On-prem nodes include a high performance machine with a GPU, and a low performance single board computer.",
         "Terraform used to create the minimal cloud infrastructure and security groups.",
-        "A variety of current workloads: A label printer UI, this resume, LNBits bitcoin payment gateway.",
+        "A variety of current workloads: A label printer UI, this resume, LNBits bitcoin payment gateway, pixel.promo, Woocommerce webhook router...",
         "IN-PROGRESS: Whisper AI application to remove ads from podcasts."
       ],
       "keywords": [
