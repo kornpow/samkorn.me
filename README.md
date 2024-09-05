@@ -13,6 +13,11 @@ resume export --resume resume.json --format html  --theme macchiato public/index
 ```
 This creates a self-contained HTML file which is located at `public/index.html`.
 
+Export the resume into PDF format!
+```bash
+resume export --resume resume.json --format pdf  --theme macchiato public/resume.pdf
+```
+
 ## Deployment
 ### Kubernetes
 In order to deploy this resume to the url `samkorn.me`, which is currently hosted using kubernetes, this `index.html` file must be added to a ConfigMap in the cluster.
