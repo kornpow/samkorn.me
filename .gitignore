@@ -1,3 +1,4 @@
 **/node_modules/
 resume-json/public/*.pdf
 **/.DS_Store
+resume-json/public/*.html

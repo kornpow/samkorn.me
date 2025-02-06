@@ -16,6 +16,8 @@ This creates a self-contained HTML file which is located at `public/index.html`.
 Export the resume into PDF format!
 ```bash
 resume export --resume resume.json --format pdf  --theme macchiato public/resume.pdf
+
+resume export --resume resume.json --format pdf --theme macchiato public/resume_$(date +"%Y%m%d_%H%M%S").pdf
 ```
 
 ## Deployment
