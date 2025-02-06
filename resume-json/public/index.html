@@ -75,7 +75,7 @@ body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
   background: white;
-  margin: 50px 0 100px;
+  /* margin: 50px 0 100px; */
   letter-spacing: .3px;
   color: #39424B;
 }
@@ -203,18 +203,54 @@ ul.two-column li {
 }
 
 @page {
-  size: A4;
+  size: letter;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+}
+
+.title h3 {
+  font-weight: 700;
 }
 
 .container {
-  padding-top: 20px;
+  padding-top: 10px;
+}
+
+/* ABOUT SECTION */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: left;
+}
+
+.about-header {
+  margin-bottom: 5rem;
 }
 
 .keyline {
   width: 45px;
-  margin: 8px 0 10px;
+  margin: 8px auto 10px;
   border-top: 1px solid #56817A;
 }
+
+/* TOP HEADER */
+h1.resume-header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.profile-header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* SKILLS SECTION */
+
+/* EXPERIENCE SECTION */
 
 .pull-left {
   float: left;
@@ -259,13 +295,15 @@ ul.two-column li {
 /* Layouts */
 .page {
   background: white;
-  width: 612px;
+  /* width: 90%; */
   min-height: 792px;
   display: block;
-  margin: 0 auto;
+  margin: 0 0.75in 1in;
   border-top: 10px solid #56817A;
   padding: 36px 22px 30px 34px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); */
+  /* page-break-before: always;
+  break-before: page; */
 }
 
 .page:after {
@@ -286,15 +324,11 @@ ul.two-column li {
   overflow: hidden;
 }
 
-.item {
-  margin-bottom: 15px;
-}
-
 .item:last-child {
   margin-bottom: 0;
 }
 
-@media print {
+/* @media print {
   body {
     margin: 0;
   }
@@ -303,7 +337,7 @@ ul.two-column li {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 36px 0 30px;
+    padding: 50px 0 20px;
     box-shadow: none;
   }
 
@@ -323,11 +357,11 @@ ul.two-column li {
   .fa-external-link {
     display: none;
   }
-}
+} */
 
 /* Components */
 .info-tag-container {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .info-tag-container .fa {
@@ -365,7 +399,7 @@ ul.two-column li {
   text-transform: none;
   display: inline-block;
   vertical-align: middle;
-  width: 139px;
+  width: 150px;
 }
 
 .references-container .fa {
@@ -404,429 +438,203 @@ ul.two-column li {
 <body>
   <main id="resume" class="page">
     <header class="resume-header clearfix">
-        <div class="profile-header pull-left">
-            <h1>Sam Korn</h1>
-            <h2></h2>
-        </div>
-        <div class="profile-pic pull-right">
+        <div class="profile-header">
+            <h1 class="profile-header">Sam Korn</h1>
+            <h2>Software Engineer</h2>
         </div>
     </header>
     <div class="resume-content">
-      <aside class="left-column">
-        <div class="container about-container">
-            <div class="title">
-                <h3>About</h3>
-                <div class="keyline"></div>
-            </div>
-                <div class="info-tag-container">
-                    <i class="fa fa-map-marker"></i>
-                
-                        <h6 class="info-text"> Westminster Colorado  US</h6>
-                </div>
-        
-        
-                <div class="info-tag-container">
-                    <i class="fa fa-envelope-o"></i>
-                
-                        <h6 class="info-text">
-                            <a href="mailto:korn94sam@gmail.com" target="_blank">
-                                korn94sam@gmail.com
-                            </a>
-                        </h6>
-                </div>
-        
-                <div class="info-tag-container">
-                    <i class="fa fa-mobile"></i>
-                
-                        <h6 class="info-text">
-                            <a href="https://samkorn.me" target="_blank">
-                                (720) 333-4371
-                            </a>
-                        </h6>
-                </div>
-        
-        
-                                 <div class="info-tag-container">
-                                     <i class="fa fa-twitter"></i>
-                                 
-                                         <h6 class="info-text">
-                                             <a href="https://twitter.com/samkorn" target="_blank">
-                                                 samkorn
-                                             </a>
-                                         </h6>
-                                 </div>
-                                <div class="info-tag-container">
-                                    <i class="fa fa-linkedin-square"></i>
-                                
-                                        <h6 class="info-text">
-                                            <a href="https://www.linkedin.com/in/samuel-korn/" target="_blank">
-                                                samuel-korn
-                                            </a>
-                                        </h6>
-                                </div>
-                                 <div class="info-tag-container">
-                                     <i class="fa fa-github"></i>
-                                 
-                                         <h6 class="info-text">
-                                             <a href="https://github.com/kornpow" target="_blank">
-                                                 kornpow
-                                             </a>
-                                         </h6>
-                                 </div>
-        </section>
-            <div class="skills-container">
-                    <section class="container">
-                            <div class="title">
-                                <h3>Programming</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">Python</h6>
-                                    <h6 class="main-skill skill">Golang</h6>
-                                    <h6 class="main-skill skill">Javascript</h6>
-                                    <h6 class="main-skill skill">C#</h6>
-                            </div>
-                    </section>
-                    <section class="container">
-                            <div class="title">
-                                <h3>Tools</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">Kubernetes</h6>
-                                    <h6 class="main-skill skill">Terraform</h6>
-                                    <h6 class="main-skill skill">Jenkins</h6>
-                                    <h6 class="main-skill skill">CloudFormation</h6>
-                                    <h6 class="main-skill skill">Docker</h6>
-                            </div>
-                    </section>
-                    <section class="container">
-                            <div class="title">
-                                <h3>Databases</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">DynamoDB</h6>
-                                    <h6 class="main-skill skill">PostgreSQL</h6>
-                                    <h6 class="main-skill skill">Redis</h6>
-                                    <h6 class="main-skill skill">MongoDB</h6>
-                            </div>
-                    </section>
-                    <section class="container">
-                            <div class="title">
-                                <h3>Electrical</h3>
-                                <div class="keyline"></div>
-                            </div>                    <div class="minimal flex-container">
-                                    <h6 class="main-skill skill">KiCAD</h6>
-                                    <h6 class="main-skill skill">Altium</h6>
-                                    <h6 class="main-skill skill">Eagle</h6>
-                            </div>
-                    </section>
-            </div>
-            <div class="container languages-container">
-                <div class="title">
-                    <h3>Languages</h3>
-                    <div class="keyline"></div>
-                </div>
-                <ul class="minimal">
-                        <li>
-                            <h6>English <em>(Native speaker)</em></h6>
-                        </li>
-                        <li>
-                            <h6>Spanish <em>(Beginner)</em></h6>
-                        </li>
-                        <li>
-                            <h6>Korean <em>(Beginner)</em></h6>
-                        </li>
-                </ul>
-            </div>
-            <div class="container interests-container">
-                <div class="title">
-                    <h3>Interests</h3>
-                    <div class="keyline"></div>
-                </div>
-                    <section class="item">
-                            <h4 class="bold">Health</h4>
-                            <ul class="minimal">
-                                    <li>Running</li>
-                                    <li>Lifting</li>
-                                    <li>Biking</li>
-                            </ul>
-                    </section>
-                    <section class="item">
-                            <h4 class="bold">Hobby</h4>
-                            <ul class="minimal">
-                                    <li>Mushrooms</li>
-                                    <li>Gardening</li>
-                                    <li>Brewing</li>
-                            </ul>
-                    </section>
-            </div>
-      </aside>
-      <div class="right-column">
-                <div class="container summary-container">
-                    <div class="title">
-                        <h3>Summary</h3>
-                        <div class="keyline"></div>
-                    </div>            <p class="summary">
-                        Sam has worked in a variety of industries, and always works with passion for the mission. He is always learning about new technologies, both software and hardware, and loves to bring together his wide variety of experiences to build novel new things. He is looking for a new role which is the right combination of great mission, great team, and great product.
-                    </p>
-                </div>
-        <div class="container work-container">
-            <div class="title">
-                <h3>Experience</h3>
-                <div class="keyline"></div>
-            </div>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">09/2021</span>
-                                <span class="endDate"> - 10/2023</span>
-                        </h5>
-                    </div>
-                      <h4>
-                        Voltage Cloud
-                      </h4>
-        
-                    <h4>Backend + Infrastructure Engineer</h4>
-        
-        
-                    <p class="summary">Building easy to deploy infrastructure which allows developers to easily begin using Bitcoin/Lightning in their business.</p>
-        
-                    <ul>
-                        <li>Created a custom payment, credit, and invoicing system, which allowed customers to pay for our services using Bitcoin or USD, and manage their subscriptions.</li>
-                        <li>Primary developer of SaaS REST API Backend, written in Python, running in AWS Lambda, deployed using CloudFormation.</li>
-                        <li>Created a site-to-site VPN between our AWS and GCP datacenters.</li>
-                        <li>Developed tools and infrastructure to allow kubernetes workloads to be deployed on both AWS EKS and Google GKE clusters.</li>
-                        <li>Contributed to improving our CI/CD workflows. Created GitHub Actions to run tests, and update cloud configuration parameters. Helped to maintain our ArgoCD deployment infrastructure.</li>
-                        <li>Designed and managed our employee Wireguard VPN network.</li>
-                        <li>Managed the majority of our cloud infrastructure using Terraform, and was constantly looking for opportunities to bring more infrastructure under IaC practices.</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">08/2020</span>
-                                <span class="endDate"> - 09/2021</span>
-                        </h5>
-                    </div>
-                      <h4>
-                        Biarri Networks
-                      </h4>
-        
-                    <h4>DevOps Engineer</h4>
-        
-        
-                    <p class="summary">Creating deployment pipelines, and other tools, to enable developers working on advanced computation to optimally design fiber optic networks.</p>
-        
-                    <ul>
-                        <li>Maintained and upgraded our Jenkins CI/CD server.</li>
-                        <li>Led an effort to migrate our jobs from classic Jenkins to using Jenkinsfiles, which is more composable, and easier to audit as code.</li>
-                        <li>Improved internal tools to improve data-flow to leadership and managers.</li>
-                        <li>Implemented a system upgrade for our high-performance solver servers, minimizing customer downtime, while adhering to strict upgrade requirements.</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">08/2017</span>
-                                <span class="endDate"> - 07/2020</span>
-                        </h5>
-                    </div>
-                      <h4>
-                        Babylon Micro-Farms
-                      </h4>
-        
-                    <h4>IoT Engineer</h4>
-        
-        
-                    <p class="summary">Developed electronics, embedded software, and cloud software to enable fleets of hydroponic farms to grow quality produce.</p>
-        
-                    <ul>
-                        <li>Wrote embedded Linux Python code for our farm modules, and managed OTA updates to the devices.</li>
-                        <li>Developed a Django based backend API which ingested farm sensor data, and allowed for control of the device using a React Native mobile app.</li>
-                        <li>Developed a label printing system, which allowed for tracking physical plant seed pods to info in a database.</li>
-                        <li>Awarded a patent for an automated hydroponics nutrient dosing system: https://patents.justia.com/patent/20200396917</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h5 class="italic pull-right">
-                                <span class="startDate">06/2016</span>
-                                <span class="endDate"> - 07/2017</span>
-                        </h5>
-                    </div>
-                      <h4>
-                        Canvas Technology
-                      </h4>
-        
-                    <h4>Electrical Engineer</h4>
-        
-        
-                    <p class="summary">Designed and manufactured electronics, and created testing systems for an advanced computer vision warehouse robot.</p>
-        
-                    <ul>
-                        <li>Installed hardware and software onto high performance PCs, which was the brain of an autonomous warehouse vehicle.</li>
-                        <li>Collaborated with team members in our software, electrical, and mechanical teams to develop a new embedded architecture, which allowed for simpler communication and wiring.</li>
-                        <li>Created a test rig in C#, which tested the operation of an embedded-system wheel assembly.</li>
-                        <li>Designed, debugged, and iterated on a variety of PCBs, including a motor driver, a head unit, and a LED unit, and created optimized BOMs.</li>
-                        <li>Manufactured some electronics in-lab using a pick-and-place machine and reflow oven.</li>
-                    </ul>
-                </section>
-        </div>
-        <div class="container project-container">
-            <div class="title">
-                <h3>Open Source Projects</h3>
-                <div class="keyline"></div>
-            </div>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://samkorn.xyz/labelprinter" target="_blank">
-                                    On-Prem Application Cluster
-                                        <span class="sublink">∙ <a href="https://samkorn.xyz/labelprinter" target="_blank" class="sublink">https://samkorn.xyz/labelprinter</a></span>
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">10/2023</span>
-                                <span class="endDate"> - Present</span>
-                        </h5>
-                    </div>
-                      <h4>
-                        A kubernetes cluster, which does most of the compute using on-premises hardware
-                      </h4>
-        
-        
-                    <div class="flex-container">
-                            <h6 class="skill">Infrastructure</h6>
-                            <h6 class="skill">Kubernetes</h6>
-                            <h6 class="skill">AI</h6>
-                    </div>
-        
-        
-                    <ul>
-                        <li>Create a three node &#x27;k3s&#x27; (minified kubernetes) cluster with one node in the cloud and two nodes &#x27;on-prem&#x27; at my home.</li>
-                        <li>On-prem nodes include a high performance machine with a GPU, and a low performance single board computer.</li>
-                        <li>Terraform used to create the minimal cloud infrastructure and security groups.</li>
-                        <li>A variety of current workloads: A label printer UI, this resume, LNBits bitcoin payment gateway.</li>
-                        <li>IN-PROGRESS: Whisper AI application to remove ads from podcasts.</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://github.com/lightningspore/mushroom-monorepo/tree/master/software/esphome" target="_blank">
-                                    IoT Prometheus Temperature and Humidity Sensor
-                                        <span class="sublink">∙ <a href="https://github.com/lightningspore/mushroom-monorepo/tree/master/software/esphome" target="_blank" class="sublink">https://github.com/lightningspore/mushroom-monorepo/tree/master/software/esphome</a></span>
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">10/2023</span>
-                                <span class="endDate"> - Present</span>
-                        </h5>
-                    </div>
-                      <h4>
-                        A MicroPython + hardware project, which communicates to a temperature and humidity sensor.
-                      </h4>
-        
-        
-                    <div class="flex-container">
-                            <h6 class="skill">Hardware</h6>
-                            <h6 class="skill">Monitoring</h6>
-                            <h6 class="skill">Prometheus</h6>
-                    </div>
-        
-        
-                    <ul>
-                        <li>Hardware is a Raspberry Pi Pico W wired to a AM2301 sensor.</li>
-                        <li>Runs a webserver on the embedded device, and returns data in prometheus data format.</li>
-                        <li>Grafana agent on another device queries the sensor server and sends data to Grafana Cloud where data can be graphed and analyzed.</li>
-                        <li>This project has been bundled and improved by LightningSpore. It now uses ESP32, ESPHome, and the SCD41 environmental sensor.</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://pixel.promo" target="_blank">
-                                    Pixel.Promo
-                                        <span class="sublink">∙ <a href="https://pixel.promo" target="_blank" class="sublink">https://pixel.promo</a></span>
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">10/2021</span>
-                                <span class="endDate"> - Present</span>
-                        </h5>
-                    </div>
-                      <h4>
-                        A paid service which allows you to draw art on a public forum, and protects your art from defacement.
-                      </h4>
-        
-        
-                    <div class="flex-container">
-                            <h6 class="skill">Bitcoin</h6>
-                            <h6 class="skill">Image Processing</h6>
-                            <h6 class="skill">Fun</h6>
-                    </div>
-        
-        
-                    <ul>
-                        <li>Built using the awesome Python tool, Zappa, which allows for easily creating Flask applications hosted by AWS Lambda.</li>
-                        <li>Keeps track of which pixels are being protected, and will efficiently replace defaced pixels.</li>
-                        <li>This project is being linked to on the https://satoshis.place website!</li>
-                        <li>Project has been re-vamped so that is deployable using K8s, and the lightning payment process is easier to understand.</li>
-                    </ul>
-                </section>
-                <section class="item">
-                    <div class="section-header clearfix">
-                        <h3 class="bold pull-left">
-                                <a href="https://lightningspore.com" target="_blank">
-                                    Lightning Spore
-                                        <span class="sublink">∙ <a href="https://lightningspore.com" target="_blank" class="sublink">https://lightningspore.com</a></span>
-                                </a>
-                        </h3>
-                        <h5 class="italic pull-right">
-                                <span class="startDate">10/2023</span>
-                                <span class="endDate"> - Present</span>
-                        </h5>
-                    </div>
-                      <h4>
-                        A web shop which specializes in selling mushroom genetics, and electronics related to mushroom cultivation.
-                      </h4>
-        
-        
-                    <div class="flex-container">
-                            <h6 class="skill">E-Commerce</h6>
-                            <h6 class="skill">Wordpress</h6>
-                            <h6 class="skill">Science</h6>
-                    </div>
-        
-        
-                    <ul>
-                        <li>Currently have a genetics library of 15+ species of mushrooms (gourmet, medicinal, etc) available for sale.</li>
-                        <li>Website is developed using WordPress, Zaprite and LNBits is leveraged in order to achieve a high quality experience for BTC and USD payments.</li>
-                        <li>Electronic sensor modules have been developed using Open-Source hardware and software components</li>
-                        <li>3D printed enclosures have been designed to package the electronics.</li>
-                    </ul>
-                </section>
-        </div>
-        <div class="container education-container">
-            <div class="title">
-            <h3>Education</h3>
-            <div class="keyline"></div>
-        </div> 
-            <section class="item">
-                <div class="section-header clearfix">
-            <h3 class="bold pull-left">
-                    University of Colorado Boulder
-            </h3>
-            <h5 class="italic pull-right">
-                    <span class="startDate">08/2012</span>
-                    <span class="endDate"> - 05/2016</span>
-            </h5>
-        </div>
-         
-                <h4>Bachelor Electrical and Computer Engineering</h4>
-        
-              </section>
-        </div>
+      <div class="container about-container">
+              <div class="info-tag-container">
+                  <h6 class="info-text">
+                  Location<br/>
+                      Westminster, Colorado
+                  </h6>
+              </div>
+      
+      
+              <div class="info-tag-container">
+                  <h6 class="info-text">
+                  Email<br/>
+              
+                          <a href="mailto:korn94sam@gmail.com" target="_blank">
+                              korn94sam@gmail.com
+                          </a>
+              
+                  </h6>
+              </div>
+      
+              <div class="info-tag-container">
+                  <h6 class="info-text">
+                  Phone<br/>
+              
+                          <a href="https://samkorn.me" target="_blank">
+                              (720) 333-4371
+                          </a>
+              
+                  </h6>
+              </div>
+      
+              <div class="info-tag-container">
+                  <h6 class="info-text">
+                  Website<br/>
+              
+                          <a href="https://samkorn.me" target="_blank">
+                              https://samkorn.me
+                          </a>
+              
+                  </h6>
+              </div>
+      
+                          <div class="info-tag-container">
+                              <h6 class="info-text">
+                              LinkedIn<br/>
+                          
+                                      <a href="https://www.linkedin.com/in/samuel-korn/" target="_blank">
+                                          samuel-korn
+                                      </a>
+                          
+                              </h6>
+                          </div>
+                          <div class="info-tag-container">
+                              <h6 class="info-text">
+                              GitHub<br/>
+                          
+                                      <a href="https://github.com/kornpow" target="_blank">
+                                          kornpow
+                                      </a>
+                          
+                              </h6>
+                          </div>
       </div>
+      <div class="container work-container">
+          <div class="title">
+              <h3>Work Experience</h3>
+              <div class="keyline"></div>
+          </div>
+              <section class="item" style="margin-bottom: 5px;">
+                  <h4 style="font-weight: bold;">Founder | LightningSpore LLC | 10/2024—Present</h4>
+      
+      
+                  <p class="summary">Incorporated a business which applies technology to streamline agricultural processes by developing hardware and software to optimize mushroom cultivation.</p>
+      
+                  <ul>
+                      <li>Designed electronics, embedded software, and 3D printed models for a suite of ESP32 based sensor modules.</li>
+                      <li>Created a Kubernetes cluster of VPN-networked Linux devices to run the business website, webhooks, and internal tools. Nodes created using Ansible scripts.</li>
+                      <li>Cultivated a multitude of different species of mushroom, cataloged and stored genetics.</li>
+                      <li>Collaborated with various contractors to build a compelling e-commerce store powered by WordPress, which supports a wide variety of payment options.</li>
+                      <li>Created a web application for printing custom labels using a templating system built using FastAPI, Tailwind CSS and HTML.</li>
+                      <li>Made extensive use of AI models for code generation (Claude/Cursor), image generation (Flux), speech-to-text (Whisper), and always kept an eye on rapidly advancing AI progress.</li>
+                  </ul>
+              </section>
+              <section class="item" style="margin-bottom: 5px;">
+                  <h4 style="font-weight: bold;">Infrastructure Engineer | Voltage Cloud | 09/2021—10/2023</h4>
+      
+      
+                  <p class="summary">Building easy to deploy cloud infrastructure which allows business to easily accept payments using Bitcoin/Lightning.</p>
+      
+                  <ul>
+                      <li>Architected a payment, credit, and invoicing system, which allowed customers to pay for our services using Bitcoin or USD, using Stripe APIs.</li>
+                      <li>Maintained a Python-based SaaS REST API Backend running in an AWS Lambda environment. Managed our deployments using AWS Cloudformation.</li>
+                      <li>Deployed postgres and sqlite relational database systems, and created automated backup systems using AWS S3 and other tools.</li>
+                      <li>Worked closely with platform team to deploy and manage our Kubernetes-native Prometheus and Grafana stack.</li>
+                      <li>Enabled multi-cloud k8s cluster operation by designing and implementing a site-to-site VPN between our AWS and GCP datacenters.</li>
+                      <li>Contributed to creating and improving our CI/CD workflows using GitHub Actions and ArgoCD to run tests and deploy code.</li>
+                      <li>Key player in designing and deploying our AWS and GCP cloud infrastructure using Terraform with an eye for scalability and reliability.</li>
+                      <li>Pushed for cloud security best practices by participating in our SOC2 certification planning and implementation.</li>
+                  </ul>
+              </section>
+              <section class="item" style="margin-bottom: 5px;">
+                  <h4 style="font-weight: bold;">DevOps Engineer | Biarri Networks | 08/2020—09/2021</h4>
+      
+      
+                  <p class="summary">Creating deployment pipelines, and other tools, that enable developers working on advanced computation to optimally design fiber optic networks for the telecommunications industry.</p>
+      
+                  <ul>
+                      <li>Led an effort to migrate our jobs from classic Jenkins to using Jenkinsfiles, which is more composable, and easier to audit as code.</li>
+                      <li>Improved internal tools to improve data-flow to leadership and managers.</li>
+                      <li>Using Terraform, implemented a system upgrade for our high-performance solver servers, minimizing customer downtime, while adhering to strict upgrade requirements.</li>
+                  </ul>
+              </section>
+              <section class="item" style="margin-bottom: 5px;">
+                  <h4 style="font-weight: bold;">IoT Engineer | Babylon Micro-Farms | 08/2017—07/2020</h4>
+      
+      
+                  <p class="summary">Developed electronics, embedded software, and cloud software to enable fleets of hydroponic farms to grow quality produce.</p>
+      
+                  <ul>
+                      <li>Wrote embedded Linux Python code for our farm modules, and managed OTA updates to the devices.</li>
+                      <li>Developed a Django based backend API which ingested farm sensor data, and allowed for control of the device using a React Native mobile app.</li>
+                      <li>Developed a label printing system, which allowed for tracking physical plant seed pods to info in a database.</li>
+                      <li>Awarded a patent for an automated hydroponics nutrient dosing system: https://patents.justia.com/patent/20200396917</li>
+                  </ul>
+              </section>
+              <section class="item" style="margin-bottom: 5px;">
+                  <h4 style="font-weight: bold;">Electrical Engineer | Canvas Technology | 06/2016—07/2017</h4>
+      
+      
+                  <p class="summary">Designed and manufactured electronics, and created testing systems for an advanced computer vision warehouse robot.</p>
+      
+                  <ul>
+                      <li>Installed hardware and software onto high performance PCs, which was the brain of an autonomous warehouse vehicle.</li>
+                      <li>Collaborated with team members in our software, electrical, and mechanical teams to develop a new embedded architecture, which allowed for simpler communication and wiring.</li>
+                      <li>Created a test rig in C#, which tested the operation of an embedded-system wheel assembly.</li>
+                      <li>Designed, debugged, and iterated on a variety of PCBs, including a motor driver, a MCU communications hub, and a LED unit, and created cost-optimized BOMs.</li>
+                      <li>Manufactured electronics in-lab using a pick-and-place machine and reflow oven.</li>
+                  </ul>
+              </section>
+      </div>
+      <div class="container skills-container">
+              <section class="container">
+                      <div class="title">
+                          <h3>Skills</h3>
+                          <div class="keyline"></div>
+                      </div>                <div class="minimal flex-container">
+                              <h6 class="main-skill skill">Python</h6>
+                              <h6 class="main-skill skill">Golang</h6>
+                              <h6 class="main-skill skill">Javascript</h6>
+                              <h6 class="main-skill skill">C#</h6>
+                              <h6 class="main-skill skill">Kubernetes</h6>
+                              <h6 class="main-skill skill">Bash</h6>
+                              <h6 class="main-skill skill">Scripting</h6>
+                              <h6 class="main-skill skill">Terraform</h6>
+                              <h6 class="main-skill skill">Jenkins</h6>
+                              <h6 class="main-skill skill">CloudFormation</h6>
+                              <h6 class="main-skill skill">Docker</h6>
+                              <h6 class="main-skill skill">DynamoDB</h6>
+                              <h6 class="main-skill skill">PostgreSQL</h6>
+                              <h6 class="main-skill skill">Redis</h6>
+                              <h6 class="main-skill skill">MongoDB</h6>
+                              <h6 class="main-skill skill">KiCAD</h6>
+                              <h6 class="main-skill skill">Altium</h6>
+                              <h6 class="main-skill skill">Eagle</h6>
+                              <h6 class="main-skill skill">AWS</h6>
+                              <h6 class="main-skill skill">GCP</h6>
+                              <h6 class="main-skill skill">Fusion360</h6>
+                      </div>
+              </section>
+      </div>
+      <div class="container education-container">
+          <div class="title">
+              <h3>Education</h3>
+              <div class="keyline"></div>
+          </div>
+          <section class="item">
+              <div class="section-header clearfix">
+                  <h3 class="bold pull-left">
+                          University of Colorado Boulder
+                  </h3>
+              </div>
+      
+              <h4>Electrical and Computer Engineering | Bachelor </h4>
+              <h4 class="italic pull-left">
+                  08/2012—05/2016
+              </h4>
+      
+          </section>
+      </div>
+      <br/>
+
     </div>
   </main>
 </body>
