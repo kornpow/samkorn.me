@@ -1,0 +1,3 @@
+[submodule "jsonresume-theme-macchiato"]
+	path = jsonresume-theme-macchiato
+	url = https://github.com/biosan/jsonresume-theme-macchiato.git
