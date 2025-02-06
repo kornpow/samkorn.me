@@ -1,1 +1,3 @@
 **/node_modules/
+resume-json/public/*.pdf
+**/.DS_Store
