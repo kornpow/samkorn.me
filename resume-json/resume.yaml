@@ -29,20 +29,20 @@ work:
     description: ""
     position: Founder
     url: https://lightningspore.com
-    startDate: "2024-10-01"
+    startDate: "2023-10-01"
     # endDate: "2023-10-29"
     summary: Incorporated a business which applies technology to streamline agricultural processes by developing hardware and software to optimize mushroom cultivation.
     highlights:
       # - Automated and monitored grow room operations using prometheus and grafana, in addition to using an off-the-shelf environmental control platform.
-      - Designed electronics, embedded software, and 3D printed models for a suite of ESP32 based sensor modules.
-      - Created a Kubernetes cluster of VPN-networked Linux devices to run the business website, webhooks, and internal tools. Nodes created using Ansible scripts.
+      - Engineered electronics, embedded software, and 3D printed models for a suite of ESP32 based sensor modules.
+      - Orchestrated a Kubernetes cluster of VPN-networked Linux devices to run the business website, webhooks, and internal tools. Nodes created using Ansible scripts.
       - Cultivated a multitude of different species of mushroom, cataloged and stored genetics.
       # - Collaborated with various contractors to build a compelling e-commerce store powered by WordPress.
-      - Collaborated with various contractors to build a compelling e-commerce store powered by WordPress, which supports a wide variety of payment options.
+      - Directed collaboration with various contractors to build a compelling e-commerce store powered by WordPress, which supports a wide variety of payment options.
       # - Built and deployed internal tools for tracking and managing a crop throughout its life cycle.
-      - Created a web application for printing custom labels using a templating system built using FastAPI, Tailwind CSS and HTML.
+      - Developed a web application for printing custom labels using a templating system built using FastAPI, Tailwind CSS and HTML.
       # - Created a user friendly payment gateway which supports fiat and Bitcoin, using LNBits and Zaprite.
-      - Made extensive use of AI models for code generation (Claude/Cursor), image generation (Flux), speech-to-text (Whisper), and always kept an eye on rapidly advancing AI progress.
+      - Leveraged AI models for code generation (Claude/Cursor), image generation (Flux), speech-to-text (Whisper), and actively monitored rapidly advancing AI progress.
       # - Refurbished and installed Bitcoin miners as a means of cost efficient heating of the grow room.
   - name: Voltage Cloud
     location: Remote
@@ -57,17 +57,17 @@ work:
       # - Architected a payment, credit, and invoicing system, which allowed customers to pay for our services using Bitcoin or USD, and manage their subscriptions.
       - Architected a payment, credit, and invoicing system, which allowed customers to pay for our services using Bitcoin or USD, using Stripe APIs.
       # - Worked directly with customers and our customer support lead to help debug issues with Bitcoin wallets and infrastructure.
-      - Maintained a Python-based SaaS REST API Backend running in an AWS Lambda environment. Managed our deployments using AWS Cloudformation.
-      - Deployed postgres and sqlite relational database systems, and created automated backup systems using AWS S3 and other tools.
+      - Established a Python-based SaaS REST API Backend running in an AWS Lambda environment. Managed our deployments using AWS Cloudformation.
+      - Implemented postgres and sqlite relational database systems, and created automated backup systems using AWS S3 and other tools.
       # - Worked closely with frontend engineers while an API was re-architected to use GraphQL.  
       # - As an early employee, onboard many other employees onto our tech stack and kept strong working relationships.
-      - Worked closely with platform team to deploy and manage our Kubernetes-native Prometheus and Grafana stack.
-      - Enabled multi-cloud k8s cluster operation by designing and implementing a site-to-site VPN between our AWS and GCP datacenters.
+      - Collaborated closely with platform team to deploy and manage our Kubernetes-native Prometheus and Grafana stack.
+      - Designed multi-cloud k8s cluster operation by implementing a site-to-site VPN between our AWS and GCP datacenters.
       # - Developed tools and infrastructure to allow kubernetes workloads to be deployed on both AWS EKS and Google GKE clusters.
-      - Contributed to creating and improving our CI/CD workflows using GitHub Actions and ArgoCD to run tests and deploy code.
+      - Streamlined our CI/CD workflows using GitHub Actions and ArgoCD to run tests and deploy code.
       # - Designed and managed our employee Wireguard VPN network.
-      - Key player in designing and deploying our AWS and GCP cloud infrastructure using Terraform with an eye for scalability and reliability.
-      - Pushed for cloud security best practices by participating in our SOC2 certification planning and implementation.
+      - Led the design and deployment of our AWS and GCP cloud infrastructure using Terraform with an eye for scalability and reliability.
+      - Implemented cloud security best practices by participating in our SOC2 certification planning and implementation.
   - name: Biarri Networks
     location: Denver, CO
     description: ""
@@ -78,37 +78,37 @@ work:
     summary: Creating deployment pipelines, and other tools, that enable developers working on advanced computation to optimally design fiber optic networks for the telecommunications industry.
     highlights:
       # - Maintained and upgraded our Jenkins CI/CD server.
-      - Led an effort to migrate our jobs from classic Jenkins to using Jenkinsfiles, which is more composable, and easier to audit as code.
-      - Improved internal tools to improve data-flow to leadership and managers.
-      - Using Terraform, implemented a system upgrade for our high-performance solver servers, minimizing customer downtime, while adhering to strict upgrade requirements.
+      - Initiated an effort to migrate our jobs from classic Jenkins to using Jenkinsfiles, which is more composable, and easier to audit as code.
+      - Enhanced internal tools to improve data-flow to leadership and managers.
+      - Executed a system upgrade for our high-performance solver servers using Terraform, minimizing customer downtime, while adhering to strict upgrade requirements.
       # - Created Bash scripts and automation tools to streamline developer workflows, including automated testing and deployment of Jenkinsfiles and Terraform configurations.
-  - name: Babylon Micro-Farms
-    location: Charlottesville, VA
-    description: ""
-    position: IoT Engineer
-    url: https://babylonmicrofarms.com
-    startDate: "2017-08-01"
-    endDate: "2020-07-01"
-    summary: Developed electronics, embedded software, and cloud software to enable fleets of hydroponic farms to grow quality produce.
-    highlights:
-      - Wrote embedded Linux Python code for our farm modules, and managed OTA updates to the devices.
-      - Developed a Django based backend API which ingested farm sensor data, and allowed for control of the device using a React Native mobile app.
-      - Developed a label printing system, which allowed for tracking physical plant seed pods to info in a database.
-      - 'Awarded a patent for an automated hydroponics nutrient dosing system: https://patents.justia.com/patent/20200396917'
-  - name: Canvas Technology
-    location: Boulder, CO
-    description: ""
-    position: Electrical Engineer
-    url: https://amazon.com
-    startDate: "2016-06-01"
-    endDate: "2017-07-01"
-    summary: Designed and manufactured electronics, and created testing systems for an advanced computer vision warehouse robot.
-    highlights:
-      - Installed hardware and software onto high performance PCs, which was the brain of an autonomous warehouse vehicle.
-      - Collaborated with team members in our software, electrical, and mechanical teams to develop a new embedded architecture, which allowed for simpler communication and wiring.
-      - Created a test rig in C#, which tested the operation of an embedded-system wheel assembly.
-      - Designed, debugged, and iterated on a variety of PCBs, including a motor driver, a MCU communications hub, and a LED unit, and created cost-optimized BOMs.
-      - Manufactured electronics in-lab using a pick-and-place machine and reflow oven.
+  # - name: Babylon Micro-Farms
+  #   location: Charlottesville, VA
+  #   description: ""
+  #   position: IoT Engineer
+  #   url: https://babylonmicrofarms.com
+  #   startDate: "2017-08-01"
+  #   endDate: "2020-07-01"
+  #   summary: Developed electronics, embedded software, and cloud software to enable fleets of hydroponic farms to grow quality produce.
+  #   highlights:
+  #     - Wrote embedded Linux Python code for our farm modules, and managed OTA updates to the devices.
+  #     - Developed a Django based backend API which ingested farm sensor data, and allowed for control of the device using a React Native mobile app.
+  #     - Developed a label printing system, which allowed for tracking physical plant seed pods to info in a database.
+  #     - 'Awarded a patent for an automated hydroponics nutrient dosing system: https://patents.justia.com/patent/20200396917'
+  # - name: Canvas Technology
+  #   location: Boulder, CO
+  #   description: ""
+  #   position: Electrical Engineer
+  #   url: https://amazon.com
+  #   startDate: "2016-06-01"
+  #   endDate: "2017-07-01"
+  #   summary: Designed and manufactured electronics, and created testing systems for an advanced computer vision warehouse robot.
+  #   highlights:
+  #     - Installed hardware and software onto high performance PCs, which was the brain of an autonomous warehouse vehicle.
+  #     - Collaborated with team members in our software, electrical, and mechanical teams to develop a new embedded architecture, which allowed for simpler communication and wiring.
+  #     - Created a test rig in C#, which tested the operation of an embedded-system wheel assembly.
+  #     - Designed, debugged, and iterated on a variety of PCBs, including a motor driver, a MCU communications hub, and a LED unit, and created cost-optimized BOMs.
+  #     - Manufactured electronics in-lab using a pick-and-place machine and reflow oven.
 volunteer: []
 education:
   - institution: University of Colorado Boulder
