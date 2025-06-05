@@ -33,6 +33,7 @@ resume export \
 
 kubectl create \
     configmap nginx-html \
+    -n kornpow \
     --from-file=public/index.html \
     --dry-run=client -o yaml | kubectl apply -f -
 ```
