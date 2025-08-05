@@ -20,11 +20,19 @@ resume export --resume resume.json --format pdf  --theme macchiato public/resume
 resume export --resume resume.json --format pdf --theme macchiato public/resume_$(date +"%Y%m%d_%H%M%S").pdf
 ```
 
+## Output for job submissions
+```bash
+resume export \
+    --resume resume.yaml \
+    --format pdf \
+    --theme macchiato \
+    public/resume-samkorn-06-17-2025.pdf
+```
 ## Deployment
 ### Kubernetes
 In order to deploy this resume to the url `samkorn.me`, which is currently hosted using kubernetes, this `index.html` file must be added to a ConfigMap in the cluster.
 
-```
+```bash
 resume export \
     --resume resume.yaml \
     --format html \
