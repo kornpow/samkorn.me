@@ -24,6 +24,18 @@ basics:
       username: kornpow
       url: https://github.com/kornpow
 work:
+  - name: Modulo.Network
+    location: Remote
+    description: ""
+    position: Contractor
+    url: https://modulo.network
+    startDate: "2025-05-01"
+    # endDate: "2023-10-29"
+    summary: Developing a hardware and software platform for a new type of digital storage setup for bitcoin private keys.
+    highlights:
+      - Used OpenCV and Python to accurately read binary data from a custom metal device.
+      - Integrated new sensor capabilities in the existing SeedSigner hardware wallet platform.
+      - Designed PCBs and 3D printed enclosures to aid in the product development.
   - name: LightningSpore LLC
     location: Denver, CO
     description: ""
@@ -123,31 +135,37 @@ education:
 awards: []
 publications: []
 skills:
-  - name: Skills
+  - name: Software
     level: ""
     keywords:
       - Python
       - Golang
+      - AWS
       - Javascript
-      - Rust
-      - C#
+      - Terraform
+      - Docker
       - Kubernetes
+      - C#
+      - Rust
       - Bash
       - Scripting
-      - Terraform
       - Jenkins
       - CloudFormation
-      - Docker
       - DynamoDB
       - PostgreSQL
       - Redis
       - MongoDB
+      - GCP
+  - name: Hardware
+    level: ""
+    keywords:
       - KiCAD
       - Altium
       - Eagle
-      - AWS
-      - GCP
       - Fusion360
+      - 3D Printing
+      - Embedded Linux
+      - Microcontrollers
 languages:
   - language: English
     fluency: Native speaker
@@ -171,11 +189,11 @@ projects:
   - name: SeedSigner Luckfox Pico
     description: Ported the SeedSigner Bitcoin hardware wallet to the Luckfox Pico Embedded Linux platform.
     highlights:
-      - Designed a variety of custom PCBs to interface with the Luckfox Pico with a (3) different display modules.
-      - Designed a 3D printed enclosure to hold the Pico and components.
       - Cross-compiled a custom OS image using Buildroot, to support the hardware and software requirements.
+      - Designed a variety of custom PCBs to interface the Luckfox Pico with 3 different SPI display modules.
+      - Designed a 3D printed enclosure to hold the Pico and components.
       - Modified Seedsigner Python code to interface with the new hardware.
-      - Modernized the hardware related code to enable the use of a modern OS.
+      - Implemented camera access using the V4L2 driver, opening the door running the code on a more diverse set of embedded hardware.
     keywords:
       - Buildroot
       - Linux
@@ -183,6 +201,54 @@ projects:
     startDate: "2024-10-29"
     # endDate: ""
     url: https://github.com/lightningspore/seedsigner-luckfox-pico
+    roles:
+      - ""
+      - ""
+    entity: ""
+    type: application
+  - name: JSON Resume Theme
+    description: ""
+    highlights:
+      - Forked an existing resume theme, and modified it to be more easily parsable by ATS systems.
+      - Added Tailwind CSS to the theme for easier and more consistent styling.
+    keywords:
+      - AI
+      - Javascript
+    startDate: "2024-10-29"
+    # endDate: ""
+    url: https://github.com/kornpow/samkorn.me
+    roles:
+      - ""
+      - ""
+    entity: ""
+    type: application
+  - name: KiCAD API for PCB Design
+    description: ""
+    highlights:
+      - Interfaced KiCAD API with Python to create a tool for generating footprints for PCB design.
+      - Created a set of Python scripts for automating various tasks related to PCB design.
+    keywords:
+      - Python
+      - Electronics
+    startDate: "2025-05-01"
+    # endDate: ""
+    url: https://github.com/kornpow/kicad-lib-parse
+    roles:
+      - ""
+      - ""
+    entity: ""
+    type: application
+  - name: High-Availability Bitcoin Lightning App Deployment
+    description: ""
+    highlights:
+      - Docker and Kubernetes based deployment of a high-availability Bitcoin and Lightning node.
+      - Enabled a high-availability setup by deploying a etcd cluster for coordination between the multiple nodes.
+    keywords:
+      - Bitcoin
+      - Kubernetes
+    startDate: "2024-10-29"
+    # endDate: ""
+    url: https://github.com/kornpow/lnd-kube-ha
     roles:
       - ""
       - ""
